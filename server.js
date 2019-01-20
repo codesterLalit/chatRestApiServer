@@ -7,7 +7,9 @@ const _ = require('lodash');
 // const logger = require('morgan');
 
 const app = express();
-const server = app.listen(3000);
+const port = process.env.PORT || 3000;
+const server = app.listen(port);
+
 const io = require('socket.io').listen(server);
 app.use(cors());
 
