@@ -31,7 +31,7 @@
     "synchronize": "git+https://github.com/alexeypetrushin/synchronize.git",
     "synchronous": "^0.1.2",
     "watson-developer-cloud": "^3.16.0"
-  }
+  },
     "engines": {
     "node": "10.x"
   }
