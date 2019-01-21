@@ -23,7 +23,7 @@ require('./socket/private')(io);
 
 const dbConfig  = require('./config/secret');
 mongoose.Promise = global.Promise;
-mongoose.connect(dbConfig.url,{ useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
 
 
 
